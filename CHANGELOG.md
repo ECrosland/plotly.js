@@ -20,7 +20,8 @@ where X.Y.Z is the semver of most recent plotly.js release.
 ### Changed
  - Stop exporting d3-v3 to the API [#5400, #5406]
  - Stop attaching `_has*` plot types to `fullLayout` [#5409]
- - Reduce the number of beta methods from `Plotly.Fx` & `Plotly.Plots` in the API [#5420]
+ - Reduce the number of exported methods from `Plotly.Fx` and `Plotly.Plots` in the API [#5420]
+ - Drop `Plotly.plot` from the API [#5412, #5370, #5393]
  - Drop `Plotly.Queue` from the API [#5423]
  - Drop non-object `role` keys from attribute definition [#5425, #5432]
  - Drop `contourgl` trace and deprecate `gl2d` traces namely `heatmapgl` and `pointcloud`
