@@ -25,7 +25,7 @@ where X.Y.Z is the semver of most recent plotly.js release.
  - Drop `Plotly.Queue` from the API [#5423]
  - Drop non-object `role` keys from attribute definition [#5425, #5432]
  - Drop `contourgl` trace and deprecate `gl2d` traces namely `heatmapgl` and `pointcloud`
-   in [#5398, #5438, 54??]
+   in [#5398, #5438, 5447]
  - Drop legacy `polar` and `area` trace as well as `bar.t`, `bar.r`,
    `scatter.t`, `scatter.r`, `layout.radialaxis`, `layout.angularaxis` and
    `gd.framework` [#5399, #5408, #5409]
@@ -36,8 +36,8 @@ where X.Y.Z is the semver of most recent plotly.js release.
  - Fire `plotly_unhover` event when dragging [#5407],
    with thanks to @rreusser for a new contribution!
  - Include transforms and calendars in partial bundles [#5379, #5422]
- - Remove header comments from the source files and add headers to the top of
-   dist files at build time [#5436, #54??]
+ - Remove header comments from the source files and only add headers to the top of
+   dist files at build time [#5436, #5446]
  - Guard against unexpected characters at build time [#5424]
  - More maintenance work listed under the [the 60th milestone](https://github.com/plotly/plotly.js/milestone/60)!
 
