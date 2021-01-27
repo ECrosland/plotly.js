@@ -9,6 +9,47 @@ To see all merged commits on the master branch that will be part of the next plo
 
 where X.Y.Z is the semver of most recent plotly.js release.
 
+## [2.0.0] -- UNRELEASED
+
+### Added
+ - Add `strict` partial bundles [#5359, #5383, #5387, #5413, #5444],
+   thanks to [the equinor](https://www.equinor.com) for sponsoring the related development!
+ - Implement "fast" `zsmooth` option for `image` trace [#5354, #5386],
+   with thanks to @almarklein for the contribution!
+
+### Changed
+ - Stop exporting d3-v3 to the API [#5400, #5406]
+ - Stop attaching `_has*` plot types to `fullLayout` [#5409]
+ - Reduce the number of beta methods from `Plotly.Fx` & `Plotly.Plots` in the API [#5420]
+ - Drop `Plotly.Queue` from the API [#5423]
+ - Drop non-object `role` keys from attribute definition [#5425, #5432]
+ - Drop `contourgl` trace and deprecate `gl2d` traces namely `heatmapgl` and `pointcloud`
+   in [#5398, #5438, 54??]
+ - Drop legacy `polar` and `area` trace as well as `bar.t`, `bar.r`,
+   `scatter.t`, `scatter.r`, `layout.radialaxis`, `layout.angularaxis` and
+   `gd.framework` [#5399, #5408, #5409]
+ - Drop support for old browsers IE9 and IE10 [#5376, #5380]
+ - Switch to `native-promise-only` module to handle es6 promises [#5358]
+ - Switch to `probe-image-size` module to get width and height of images [#5388]
+ - Relax condition for plain-objects to enable validation using node.js [#5411]
+ - Fire `plotly_unhover` event when dragging [#5407],
+   with thanks to @rreusser for a new contribution!
+ - Include transforms and calendars in partial bundles [#5379, #5422]
+ - Remove header comments from the source files and add headers to the top of
+   dist files at build time [#5436, #54??]
+ - Guard against unexpected characters at build time [#5424]
+ - More maintenance work listed under the [the 60th milestone](https://github.com/plotly/plotly.js/milestone/60)!
+
+### Fixed
+ - Fix "toself" `fill` to handle multiple polygons for `scattergl` traces [#5355],
+   with thanks to @ruijin for the contribution!
+ - Fix element targeting on hover in shadow DOM [#5256],
+   with thanks to @dbluhm for the contribution!
+ - Fix displaying zero `threshold` for `indicator` trace [#5430]
+ - Improve attribute compression and avoid redundant copyright comments in non-minified
+   bundles [#5426, #5429, #5439]
+
+
 ## [1.58.4] -- 2020-12-21
 
 ### Fixed
